@@ -43,8 +43,4 @@
     background: crimson;
     color: #eee;
   }
-  text-area {
-    width: 200px;
-    height: 50px;
-  }
 </style>
