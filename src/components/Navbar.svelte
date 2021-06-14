@@ -36,7 +36,7 @@ class="navbar navbar-expand-lg navbar-dark bg-dark shadow pt-4
   }
   .navbar-brand {
     font-family: dancing script;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(31, 31, 31);
   }
 

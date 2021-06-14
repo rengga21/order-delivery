@@ -7,7 +7,14 @@
 {#if showCart}
   <div class="backdrop" class:cart={isCart} on:click>
     <div class="modal-cart">
-      <h5>{message}</h5>
+      <img src="../img/2s.jpg" alt="gambar" width="100" />
+      <h3>Corndog Mozarella</h3>
+      <h5>Notes</h5>
+      <p>{message}</p>
+      <textarea name="" id="" cols="30" rows="10" placeholder="catatan" />
+      <br />
+      <button class="btn btn-danger">-</button>
+      <button class="btn btn-primary">+</button>
     </div>
   </div>
 {/if}
@@ -35,5 +42,9 @@
   .cart .modal-cart {
     background: crimson;
     color: #eee;
+  }
+  text-area {
+    width: 200px;
+    height: 50px;
   }
 </style>
