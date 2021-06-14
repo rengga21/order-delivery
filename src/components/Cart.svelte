@@ -7,7 +7,7 @@
 {#if showCart}
   <div class="backdrop" class:cart={isCart} on:click>
     <div class="modal-cart">
-      <p>{message}</p>
+      <h5>{message}</h5>
     </div>
   </div>
 {/if}
