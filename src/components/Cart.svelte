@@ -27,7 +27,7 @@
     margin: 10% auto;
     text-align: center;
     background: white;
-  position: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
