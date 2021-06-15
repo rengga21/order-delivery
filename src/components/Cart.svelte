@@ -1,16 +1,14 @@
 <script>
-  export let message = "default value";
   export let showCart = true;
   export let isCart = false;
 </script>
 
 {#if showCart}
-  <div class="backdrop" class:cart={isCart} on:click>
+  <div class="backdrop" class:cart={isCart} on:click|self>
     <div class="modal-cart">
       <img src="../img/2s.jpg" alt="gambar" width="100" />
       <h3>Corndog Mozarella</h3>
       <h5>Notes</h5>
-      <p>{message}</p>
       <textarea name="" id="" cols="30" rows="10" placeholder="catatan" />
       <br />
       <button class="btn btn-danger">-</button>
@@ -24,7 +22,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 9999;
   }
   .modal-cart {

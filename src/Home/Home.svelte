@@ -56,7 +56,7 @@
   ];
 </script>
 
-<Cart message="hey i am a prop value" {showCart} on:click={toggleCart} />
+<Cart {showCart} on:click={toggleCart} />
 <Navbar />
 
 <Jumbotron />
