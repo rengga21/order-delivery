@@ -1,25 +1,27 @@
 <script>
   let cart = 0;
-  let price = 15000;
+  let price = 15;
 
-  let totalPrice = cart * price;
+  $: totalPrice = cart * price;
 
-  function addCart() {
+  const addCart = () => {
     cart += 1;
-  }
+  };
 
-  function deleteCart() {
+  const deleteCart = () => {
     cart -= 1;
-  }
+  };
 </script>
 
 <div class="cart">
   <img src="../img/2s.jpg" alt="gambar" width="100" />
   <h3>Corndog Mozarella</h3>
+  {price}K
   <p>Notes</p>
   <br />
-  Total : Rp.{totalPrice} <br />
+  Total : {totalPrice}K <br />
   <button on:click={deleteCart}>-</button>
   {cart}
-  <button on:click={addCart}>+</button>
+  <button on:click={addCart}>+</button><br /><br />
+  <button class="btn btn-danger">Checkout -></button>
 </div>

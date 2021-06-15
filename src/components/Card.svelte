@@ -81,4 +81,10 @@
   .promo {
     color: rgb(219, 55, 178);
   }
+  /* 
+  @media (min-width: 576) {
+    img {
+      width: 20px;
+    }
+  } */
 </style>
