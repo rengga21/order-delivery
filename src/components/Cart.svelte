@@ -6,13 +6,7 @@
 {#if showCart}
   <div class="backdrop" class:cart={isCart} on:click|self>
     <div class="modal-cart">
-      <img src="../img/2s.jpg" alt="gambar" width="100" />
-      <h3>Corndog Mozarella</h3>
-      <h5>Notes</h5>
-      <textarea name="" id="" cols="30" rows="10" placeholder="catatan" />
-      <br />
-      <button class="btn btn-danger">-</button>
-      <button class="btn btn-primary">+</button>
+      <slot />
     </div>
   </div>
 {/if}
