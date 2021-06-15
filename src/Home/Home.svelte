@@ -11,7 +11,7 @@
     showCart = !showCart;
   };
 
-  let menus = [
+  export let menus = [
     {
       nama: "Corndog Mozarella",
       harga: "Rp.20.000",
@@ -67,7 +67,7 @@
 <div class="container mt-3">
   <div class="row">
     {#each menus as menu (menu.id)}
-      <div class="col-md-4 mt-4">
+      <div class="col-sm-4 mt-4">
         <div class="card">
           <img src="./img/{menu.gambar}" class="card-img-top" alt="2s" />
           <div class="card-body">
@@ -104,4 +104,11 @@
   .promo {
     color: rgb(219, 55, 178);
   }
+
+  /* @media (max-width: 576px) {
+    .card {
+      width: 50%;
+      display: flex;
+    }
+  } */
 </style>
