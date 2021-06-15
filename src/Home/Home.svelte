@@ -1,4 +1,5 @@
 <script>
+  import AddCart from "../Components/AddCart.svelte";
   import Cart from "../Components/Cart.svelte";
   import Footer from "../Components/Footer.svelte";
   import Jumbotron from "../Components/Jumbotron.svelte";
@@ -57,14 +58,8 @@
 </script>
 
 <Cart {showCart} on:click={toggleCart}>
-  <img src="../img/2s.jpg" alt="gambar" width="100" />
-  <h3>Corndog Mozarella</h3>
-  <h5>Notes</h5>
-  <textarea name="" id="" cols="30" rows="10" placeholder="catatan" />
-  <br />
-  <button class="btn btn-danger">-</button>
-  <button class="btn btn-primary">+</button></Cart
->
+  <AddCart />
+</Cart>
 <Navbar />
 
 <Jumbotron />
