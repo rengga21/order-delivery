@@ -26,6 +26,7 @@
         <a class="nav-item nav-link nav-btn3" href="#snacks">Snacks</a>
         <a class="nav-item nav-link nav-btn4" href="#drinks">Drinks</a>
       </ul>
+      <a href="login" class="login">Login!</a>
     </div>
   </div>
 </nav>
@@ -34,6 +35,13 @@
   a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+  }
+  .login {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -15px;
+    right: -25px;
   }
   .navbar-brand {
     font-family: dancing script;
