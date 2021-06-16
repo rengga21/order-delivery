@@ -23,7 +23,7 @@
   <button on:click={deleteCart}>-</button>
   {cart}
   <button on:click={addCart}>+</button><br /><br />
-  <a href="#checkout" class="btn btn-danger">Checkout -></a>
+  <a href="checkout" class="btn btn-danger">Checkout -></a>
 </div>
 
 <style>
