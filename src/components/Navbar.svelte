@@ -1,5 +1,5 @@
 <nav
-class="navbar navbar-expand-lg navbar-dark bg-dark shadow pt-4
+  class="navbar navbar-expand-lg navbar-dark bg-dark shadow pt-4
 "
 >
   <div class="container">
@@ -33,6 +33,7 @@ class="navbar navbar-expand-lg navbar-dark bg-dark shadow pt-4
 <style>
   a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
   }
   .navbar-brand {
     font-family: dancing script;
@@ -52,22 +53,38 @@ font-weight: 400;
   /* Pilihan jika navbar dengan background */
 
   .nav-btn1 {
-    background-color: rgb(233, 109, 78);
+    background-color: rgb(201, 71, 39);
     border-radius: 8px;
   }
   .nav-btn2 {
-    background-color: rgb(216, 160, 108);
+    background-color: rgb(204, 123, 47);
     border-radius: 8px;
 
     color: paleturquoise;
   }
   .nav-btn3 {
-    background-color: rgb(230, 170, 81);
+    background-color: rgb(49, 155, 22);
     border-radius: 8px;
   }
   .nav-btn4 {
-    background-color: rgb(47, 202, 169);
+    background-color: rgb(28, 124, 179);
     border-radius: 8px;
+  }
+
+  /* Hover pada tombol navigasi */
+  .nav-btn1:hover {
+    background-color: rgb(240, 99, 63);
+  }
+  .nav-btn2:hover {
+    background-color: rgb(230, 150, 75);
+
+    color: paleturquoise;
+  }
+  .nav-btn3:hover {
+    background-color: rgb(62, 182, 31);
+  }
+  .nav-btn4:hover {
+    background-color: rgb(35, 154, 223);
   }
 
   /* Destop Version */
