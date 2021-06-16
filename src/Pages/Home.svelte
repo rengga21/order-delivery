@@ -2,6 +2,7 @@
   import AddCart from "../Components/AddCart.svelte";
   import Cart from "../Components/Cart.svelte";
   import Footer from "../Components/Footer.svelte";
+  import Header from "../Components/Header.svelte";
   import Jumbotron from "../Components/Jumbotron.svelte";
   import Navbar from "../Components/Navbar.svelte";
 
@@ -57,6 +58,7 @@
   ];
 </script>
 
+<Header />
 <Cart {showCart} on:click={toggleCart}>
   <AddCart />
 </Cart>
@@ -67,7 +69,7 @@
 <div class="container mt-3">
   <div class="row">
     {#each menus as menu (menu.id)}
-      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 m-list  mt-4">
+      <div class="col-sm-4  mt-4">
         <div class="card">
           <img src="./img/{menu.gambar}" class="card-img-top" alt="2s" />
           <div class="card-body">
