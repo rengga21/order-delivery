@@ -107,10 +107,27 @@
     color: rgb(219, 55, 178);
   }
 
-  /* @media (max-width: 576px) {
-    .card {
-      width: 50%;
-      display: flex;
+  /* Responsive break points */
+  @media (max-width: 540px) {
+    .tombol {
+      width: 30%;
     }
-  } */
+  }
+
+  @media (max-width: 720px) {
+    .tombol {
+      width: 35%;
+      position: relative;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+  @media (max-width: 960px) {
+    .tombol {
+      width: 30%;
+      position: relative;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
 </style>
