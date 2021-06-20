@@ -4,6 +4,10 @@
   import Footer from "../Components/Footer.svelte";
   import Jumbotron from "../Components/Jumbotron.svelte";
   import Navbar from "../Components/Navbar.svelte";
+  import Promo from "../Menu/Promo.svelte";
+  import Corndog from "../Menu/Corndog.svelte";
+  import Snacks from "../Menu/Snacks.svelte";
+  import Drinks from "../Menu/Drinks.svelte";
 
   let showCart = false;
 
@@ -65,6 +69,7 @@
 
 <Jumbotron />
 
+<Promo />
 <div class="container mt-3">
   <div class="row">
     {#each menus as menu (menu.id)}
@@ -88,7 +93,9 @@
     {/each}
   </div>
 </div>
-
+<Corndog />
+<Snacks />
+<Drinks />
 <Footer />
 
 <style>

@@ -1,6 +1,8 @@
 <script>
 </script>
 
-<section id="promo">
-  <h2>Promo</h2>
+<section id="hot-promo">
+  <div class="container mt-3">
+    <h2>Promo</h2>
+  </div>
 </section>

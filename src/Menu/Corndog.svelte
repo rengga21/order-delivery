@@ -2,5 +2,7 @@
 </script>
 
 <section id="corndog">
-  <h2>Corndog</h2>
+  <div class="container mt-3">
+    <h2>Corndog</h2>
+  </div>
 </section>
