@@ -2,7 +2,6 @@
   import AddCart from "../Components/AddCart.svelte";
   import Cart from "../Components/Cart.svelte";
   import Footer from "../Components/Footer.svelte";
-  import Header from "../Components/Header.svelte";
   import Jumbotron from "../Components/Jumbotron.svelte";
   import Navbar from "../Components/Navbar.svelte";
 
