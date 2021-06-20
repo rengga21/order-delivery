@@ -74,7 +74,7 @@
   <div class="row">
     {#each menus as menu (menu.id)}
       <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 mt-4">
-        <div class="card">
+        <div class="card card-shadow">
           <img src="./img/{menu.gambar}" class="card-img-top" alt="2s" />
           <div class="card-body">
             {#if menu.promo === "yes"}
@@ -111,6 +111,13 @@
   }
   .promo {
     color: rgb(219, 55, 178);
+  }
+
+  .card-shadow {
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   }
 
   /* Responsive break points */
