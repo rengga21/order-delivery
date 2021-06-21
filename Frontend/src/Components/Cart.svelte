@@ -17,19 +17,20 @@
     height: 100%;
     position: fixed;
     background: rgba(0, 0, 0, 0.6);
-    z-index: 9999;
+    z-index: 2;
   }
   .modal-cart {
     padding: 10px;
     width: 400px;
-    height: 100vh;
-    margin: 10% auto;
+    height: 100%;
+    margin: 0 !important;
     text-align: center;
     background: white;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 2;
+    bottom: 0;
+    z-index: 9999;
   }
   .cart .modal-cart {
     background: crimson;

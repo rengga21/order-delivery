@@ -31,7 +31,7 @@
           />
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Alamat</label>
+          <label for="inputAddress" class="form-label">Alamat Pengiriman</label>
           <input type="text" class="form-control" id="inputAddress" />
         </div>
 
@@ -54,7 +54,9 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck" />
             <label class="form-check-label" for="gridCheck">
-              Check me out
+              Pilih untuk menunjukkan kalau kamu sudah membaca dan menyetujui
+              <span class="term"> Terms of use</span> &
+              <span class="term"> Privacy policy</span> kami.
             </label>
           </div>
         </div>
@@ -69,5 +71,9 @@
 <style>
   .container {
     background: white;
+  }
+
+  .term {
+    font-weight: bold;
   }
 </style>
