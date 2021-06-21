@@ -3,7 +3,7 @@
 "
 >
   <div class="container">
-    <a class="navbar-brand" href="#navbar">Corndog Alle</a>
+    <a class="navbar-brand" href="/">Corndog Alle</a>
     <button
       class="navbar-toggler"
       type="button"

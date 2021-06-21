@@ -1,6 +1,8 @@
 <script>
+  import Nav from "../Components/Nav.svelte";
 </script>
 
+<Nav />
 <div class="container">
   <div class="row">
     <div class="col-md-6">
