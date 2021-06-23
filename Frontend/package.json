@@ -18,6 +18,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap-icons": "^1.5.0",
     "page": "^1.11.6",
     "sirv-cli": "^1.0.0"
