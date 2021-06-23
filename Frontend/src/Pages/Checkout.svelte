@@ -6,6 +6,7 @@
 <div class="container">
   <div class="row text-center mt-5">
     <div class="col">
+      <!-- Informasi Pemesan -->
       <h2>Informasi Pemesan</h2>
     </div>
   </div>
@@ -49,6 +50,40 @@
         <div class="col-md-2">
           <label for="inputZip" class="form-label">Kode Pos</label>
           <input type="text" class="form-control" id="inputZip" />
+        </div>
+
+        <!-- Metode Pembayaran -->
+
+        <div class="row mt-5">
+          <div class="div col-md-12">
+            <h3>Metode Pembayaran</h3>
+            <select id="inputState" class="form-select my-4">
+              <option selected>Pembayaran Online</option>
+              <option>Cash On Delivery</option>
+            </select>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Bank BCA
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Bank BNI
+              </label>
+            </div>
+          </div>
         </div>
         <div class="col-12">
           <div class="form-check">

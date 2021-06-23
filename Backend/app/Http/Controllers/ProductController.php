@@ -2,34 +2,80 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    function get()
+    function index()
     {
+        $produk = Product::get();
+        // dd($produk);
         return response()->json(
             [
-                "message" => "GET Method Succes"
+                "status_code" => 200,
+                "msg" => "ok",
+                "data" =>  $produk
+            ]
+        );
+    }
+    function detail($id)
+    {
+        $produk = Product::get();
+        $detail = $produk->find($id);
+
+        return response()->json(
+            [
+                "status_code" => 200,
+                "msg" => "ok",
+                "data" =>  $detail
             ]
         );
     }
 
-    function post()
+    function store(Request $request)
     {
-        return response()->json(
-            [
-                "message" => "POST Method Succes"
-            ]
-        );
+
+        try {
+            $produk = new Product();
+            $produk->name = $request->name;
+            $produk->price = $request->price;
+            $produk->active = $request->active;
+            $produk->description = $request->description;
+            $produk->save();
+
+            return response()->json(
+                [
+                    "status_code" => 200,
+                    "msg" => "POST Method JOOOOOS",
+                    "data" =>  $produk
+                ],
+                200
+            );
+        } catch (\Throwable $th) {
+            return response()->json(
+                [
+                    "status_code" => 500,
+                    "msg" => "POST Method Failde",
+                    "data" => $th
+                ],
+                500
+            );
+        }
     }
 
-    function put($id)
+    function update($id)
     {
+        $produk = Product::get();
+        $detail = $produk->find($id);
+
         return response()->json(
             [
-                "message" => "PUT Method Succes" . $id
-            ]
+                "status_code" => 200,
+                "msg" => "ok",
+                "data" =>  $detail
+            ],
+            500
         );
     }
 
