@@ -25,6 +25,7 @@
         <a class="nav-item nav-link nav-btn2" href="#corndog">Corndog</a>
         <a class="nav-item nav-link nav-btn3" href="#snacks">Snacks</a>
         <a class="nav-item nav-link nav-btn4" href="#drinks">Drinks</a>
+        <a href="a"><i class="bi bi-cart" /></a>
       </ul>
     </div>
   </div>
@@ -85,6 +86,10 @@ font-weight: 400;
   }
   .nav-btn4:hover {
     background-color: rgb(35, 154, 223);
+  }
+
+  .bi-cart {
+    font-size: 20px;
   }
 
   /* Destop Version */

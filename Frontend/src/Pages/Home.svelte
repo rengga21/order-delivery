@@ -15,7 +15,7 @@
     showCart = !showCart;
   };
 
-  export let menus = [
+  export const products = [
     {
       nama: "Corndog Mozarella",
       harga: "Rp.20.000",
@@ -72,7 +72,7 @@
 <Promo />
 <div class="container mt-3">
   <div class="row">
-    {#each menus as menu (menu.id)}
+    {#each products as menu (menu.id)}
       <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 mt-4">
         <div class="card card-shadow">
           <img src="../img/{menu.gambar}" class="card-img-top" alt="2s" />
@@ -124,6 +124,7 @@
   @media (max-width: 540px) {
     .tombol {
       width: 30%;
+      display: none;
     }
   }
 
@@ -133,6 +134,7 @@
       position: relative;
       bottom: 5px;
       right: 5px;
+      display: none;
     }
   }
   @media (max-width: 960px) {
@@ -141,6 +143,7 @@
       position: relative;
       bottom: 5px;
       right: 5px;
+      display: none;
     }
   }
 </style>

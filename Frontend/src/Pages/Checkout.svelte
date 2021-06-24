@@ -19,28 +19,34 @@
           <input type="email" class="form-control" id="email" />
         </div>
         <div class="col-12">
-          <label for="inputAddress" class="form-label">Alamat</label>
-          <input type="text" class="form-control" id="inputAddress" />
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">+62</span>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
         </div>
         <div class="col-12">
-          <label for="inputAddress2" class="form-label"
-            >Kirim ke alamat lain</label
-          >
-          <input type="text" class="form-control" id="inputAddress2" />
+          <label for="inputAddress" class="form-label">Alamat Pengiriman</label>
+          <input type="text" class="form-control" id="inputAddress" />
         </div>
+
         <div class="col-md-6">
-          <label for="inputCity" class="form-label">City</label>
+          <label for="inputCity" class="form-label">Kota</label>
           <input type="text" class="form-control" id="inputCity" />
         </div>
         <div class="col-md-4">
-          <label for="inputState" class="form-label">State</label>
+          <label for="inputState" class="form-label">Provinsi</label>
           <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
+            <option selected>Pilih...</option>
             <option>...</option>
           </select>
         </div>
         <div class="col-md-2">
-          <label for="inputZip" class="form-label">Zip</label>
+          <label for="inputZip" class="form-label">Kode Pos</label>
           <input type="text" class="form-control" id="inputZip" />
         </div>
         <div class="col-12">
@@ -52,7 +58,9 @@
           </div>
         </div>
         <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary"
+            >Lakukan Pemesanan</button
+          >
         </div>
       </form>
 
@@ -61,7 +69,7 @@
     </div>
 
     <!-- Ringkasan Belanja -->
-    <div class="col-md-5">
+    <div class="col-md-5 col-sm-4">
       <h2>Ringkasan Belanja</h2>
       <table class="table-warning">
         <th>Produk</th>
@@ -73,6 +81,29 @@
       </table>
       <!-- Metode Pembayaran -->
       <h2>Pilih Metode Pembayaran</h2>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault1"
+        />
+        <label class="form-check-label" for="flexRadioDefault1">
+          BCA Virtual Acoount
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          checked
+        />
+        <label class="form-check-label" for="flexRadioDefault2">
+          BNI Virtual Account
+        </label>
+      </div>
     </div>
   </div>
 </div>
@@ -81,9 +112,5 @@
 <style>
   .container {
     background: white;
-  }
-
-  .term {
-    font-weight: bold;
   }
 </style>

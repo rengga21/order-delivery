@@ -64,18 +64,26 @@ class ProductController extends Controller
         }
     }
 
-    function update($id)
+    function update(Request $request, $id)
     {
         $produk = Product::get();
-        $detail = $produk->find($id);
+        $update = $produk->find($id);
+
+
+        $update->name = $request->name;
+        $update->price = $request->price;
+
+        $update->save();
+
+
 
         return response()->json(
             [
                 "status_code" => 200,
                 "msg" => "ok",
-                "data" =>  $detail
+                "data" =>  $update
             ],
-            500
+            200
         );
     }
 

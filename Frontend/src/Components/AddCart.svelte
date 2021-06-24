@@ -14,7 +14,8 @@
 </script>
 
 <div class="cart">
-  <img src="../img/2s.jpg" alt="gambar" width="100" />
+  <i class="bi bi-x-lg" />
+  <img src="../img/2s.jpg" alt="gambar" width="100" class="mt-5" />
   <h3>Corndog Mozarella</h3>
   {price}K
   <p>Notes</p>
@@ -30,5 +31,10 @@
   a {
     text-decoration: none;
     color: #eee;
+  }
+  .bi-x-lg {
+    float: right;
+    position: relative;
+    cursor: pointer;
   }
 </style>
